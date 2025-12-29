@@ -1,4 +1,5 @@
 - name: configure mongodb server
+  become: yes
   hosts: mongodb
   tasks:
   - name: copy mongodb repo
